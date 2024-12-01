@@ -1,4 +1,9 @@
 document.getElementById('clickable-text').addEventListener('click', function() {
+    // Phát nhạc khi nhấn vào nút "Click Here"
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.play(); // Phát nhạc khi nhấn nút
+
+    // Hiển thị chữ với hiệu ứng
     const outputText = document.getElementById('text-output');
     outputText.style.visibility = 'visible'; // Hiện phần chữ
 
@@ -14,8 +19,4 @@ document.getElementById('clickable-text').addEventListener('click', function() {
     }
 
     showText(); // Bắt đầu hiệu ứng chạy chữ
-
-    // Phát nhạc khi nhấn vào nút "Click Here"
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.play(); // Phát nhạc khi người dùng nhấn
 });
