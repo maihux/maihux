@@ -1,0 +1,127 @@
+/* Tổng thể trang */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a3d0a; /* Nền xanh đậm */
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Hiệu ứng bóng cho chữ */
+h1, h2, p, span {
+    text-shadow: 0px 0px 10px #00FF00, 0px 0px 20px #00FF00;
+}
+
+/* Định dạng chữ */
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+span {
+    font-size: 30px;
+    color: #FF4500; /* Màu cam */
+}
+
+/* Cấu trúc chính của các phần */
+.content {
+    background-color: rgba(0, 0, 0, 0.6); /* Nền tối cho khu vực chứa text */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Phần khung chia nhỏ các phần */
+.section {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #00FF00; /* Khung viền màu xanh sáng */
+    border-radius: 8px;
+}
+
+/* Tham gia Discord - Đảm bảo giống các ô khác */
+#discord-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none; /* Bỏ underline mặc định */
+    cursor: pointer; /* Thêm con trỏ tay khi hover */
+    border-radius: 8px;
+    border: 2px solid #00FF00; /* Khung giống các ô khác */
+    background-color: #0a3d0a; /* Màu nền giống như ô khác */
+    color: #00FF00; /* Màu chữ xanh sáng */
+    font-size: 20px;
+}
+
+#discord-section:hover {
+    background-color: #1565c0; /* Thêm hiệu ứng hover */
+}
+
+#discord-section p {
+    margin: 0; /* Loại bỏ margin mặc định của p */
+    font-weight: bold; /* Đặt chữ in đậm */
+}
+
+/* Phần Dự Án */
+.projects-section {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00FF00; /* Khung giống các phần khác */
+}
+
+.projects-section ul {
+    list-style-type: none; /* Loại bỏ dấu chấm trong danh sách */
+    padding-left: 0;
+}
+
+.projects-section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00FF00; /* Màu chữ giống với các phần khác */
+}
+
+.projects-section li:last-child {
+    margin-bottom: 0; /* Loại bỏ margin dưới cùng */
+}
+
+/* Định dạng chữ động cho phần "Click Here" */
+.animated-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500; /* Màu chữ cam */
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.animated-text:hover {
+    color: #00FF00; /* Chuyển sang màu xanh khi hover */
+}
+
+/* Phần text động */
+.output-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500;
+    margin-top: 20px;
+}
