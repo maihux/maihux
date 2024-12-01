@@ -1,5 +1,5 @@
 document.getElementById('clickable-text').addEventListener('click', playMusic);
-document.getElementById('clickable-text').addEventListener('touchstart', playMusic); // Thêm sự kiện touchstart
+document.getElementById('clickable-text').addEventListener('touchstart', playMusic); // Thêm sự kiện touchstart cho điện thoại
 
 function playMusic() {
     // Phát nhạc khi nhấn vào nút "Click Here"
