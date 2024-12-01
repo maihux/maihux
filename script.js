@@ -16,8 +16,8 @@ document.getElementById('clickable-text').addEventListener('click', function() {
 
     showText(); // Bắt đầu hiệu ứng chạy chữ
 
-    // Phát nhạc nền từ file ngnhn.mp3
-    const backgroundMusic = new Audio('ngnhn.mp3'); // Đảm bảo file nhạc có sẵn
+    // Phát nhạc nền từ URL
+    const backgroundMusic = new Audio('https://on.soundcloud.com/hCxkWrnMSHBgxVg87'); // URL thay vì file local
     backgroundMusic.loop = true; // Lặp lại nhạc
     backgroundMusic.play().catch((error) => {
         console.error('Lỗi khi phát nhạc:', error);
