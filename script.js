@@ -1,10 +1,8 @@
 document.getElementById('clickable-text').addEventListener('click', function() {
     const outputText = document.getElementById('text-output');
-    outputText.style.visibility = 'visible'; // Hiện phần chữ
+    outputText.style.visibility = 'visible'; // Hiển thị phần chữ
 
-    const textToShow = `
-Xin chào! Tôi là Nhân dz
-    `;
+    const textToShow = `Xin chào! Tôi là Nhân dz`;
 
     let index = 0;
     function showText() {
@@ -17,11 +15,11 @@ Xin chào! Tôi là Nhân dz
 
     showText(); // Bắt đầu hiệu ứng chạy chữ
 
-    // Hiển thị và phát nhạc từ SoundCloud khi click
-    document.getElementById('soundcloud-player').style.display = 'block'; // Hiển thị player
+    // Phát nhạc từ SoundCloud
+    var player = document.getElementById('soundcloud-player');
+    player.style.display = 'block'; // Hiển thị iframe
 
-    // Đổi track ID của bạn tại đây
-    const trackUrl = "https://api.soundcloud.com/tracks/YOUR_TRACK_ID"; // Thay thế bằng track URL của bạn
-    const player = document.querySelector('iframe');
-    player.src = `https://w.soundcloud.com/player/?url=${encodeURIComponent(trackUrl)}&color=%23ff5500&auto_play=true`;
+    // Nếu bạn muốn âm thanh phát ngay lập tức
+    const backgroundMusic = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+    backgroundMusic.play(); // Phát nhạc
 });
