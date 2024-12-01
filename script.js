@@ -3,7 +3,7 @@ document.getElementById('clickable-text').addEventListener('click', function() {
     const backgroundMusic = document.getElementById('background-music');
     backgroundMusic.play(); // Phát nhạc khi nhấn nút
 
-    // Hiển thị chữ với hiệu ứng
+    // Hiển thị phần chữ với hiệu ứng chạy
     const outputText = document.getElementById('text-output');
     outputText.style.visibility = 'visible'; // Hiện phần chữ
 
