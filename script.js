@@ -1,4 +1,7 @@
-document.getElementById('clickable-text').addEventListener('click', function() {
+document.getElementById('clickable-text').addEventListener('click', playMusic);
+document.getElementById('clickable-text').addEventListener('touchstart', playMusic); // Thêm sự kiện touchstart
+
+function playMusic() {
     // Phát nhạc khi nhấn vào nút "Click Here"
     const backgroundMusic = document.getElementById('background-music');
     backgroundMusic.play(); // Phát nhạc khi nhấn nút
@@ -9,7 +12,7 @@ document.getElementById('clickable-text').addEventListener('click', function() {
 
     const textToShow = `Xin chào! Tôi là Nhân dz`;
     let index = 0;
-    
+
     function showText() {
         if (index < textToShow.length) {
             outputText.textContent += textToShow[index];
@@ -19,4 +22,4 @@ document.getElementById('clickable-text').addEventListener('click', function() {
     }
 
     showText(); // Bắt đầu hiệu ứng chạy chữ
-});
+}
